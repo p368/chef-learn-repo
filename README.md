@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Overview
 ========
 
@@ -64,3 +65,9 @@ Next Steps
 ==========
 
 Read the README file in each of the subdirectories for more information about what goes in those directories.
+=======
+chef-learn-repo
+===============
+
+Repository to learn hosted chef stuff
+>>>>>>> 6a50130a98b8720694640d197498f8fadf6a80d2

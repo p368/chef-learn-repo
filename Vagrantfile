@@ -15,7 +15,8 @@ Vagrant.configure("2") do |config|
   # use vagrant omnibus to install chef on vm at start time
   config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_provisionerless.box"
   # use omnibus to install chef an vm at runtime https://github.com/schisamo/vagrant-omnibus
-  config.omnibus.chef_version = :latest
+  # config.omnibus.chef_version = :latest
+  config.omnibus.chef_version = "11.4.0"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -104,12 +105,12 @@ Vagrant.configure("2") do |config|
   #   chef.chef_server_url = "https://api.opscode.com/organizations/ORGNAME"
   #   chef.validation_key_path = "ORGNAME-validator.pem"
   # end
-  # Peter set according to ORGNAME = "p368_org"
+  # Peter set according to ORGNAME = "p368_2"
   config.vm.provision :chef_client do |chef|
-    chef.chef_server_url = "https://api.opscode.com/organizations/p368_org"
-    chef.validation_key_path = "./.chef/p368_org-validator.pem"
-    chef.validation_client_name = "p368_org-validator"
-    chef.node_name = "peter_vm_ubuntu"
+    chef.chef_server_url = "https://api.opscode.com/organizations/p368_2"
+    chef.validation_key_path = "./.chef/p368_2-validator.pem"
+    chef.validation_client_name = "p368_2-validator"
+    chef.node_name = "peter_vm_2_ubuntu"
   end
   #
   # If you're using the Opscode platform, your validator client is

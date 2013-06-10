@@ -1,0 +1,15 @@
+{
+  "name": "application",
+  "description": "contains recipes to set up application layer in ubuntu example",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[passenger_apache2]"
+  ],
+  "env_run_lists": {
+  }
+}

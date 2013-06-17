@@ -10,6 +10,6 @@ application "rails-demo" do
 	path "/var/www/rails-apps/rails-demo"
 	owner "vagrant"
 	group "vagrant"
-	repository "http://github.com/p368/chef-learn-repo"
+	repository "http://github.com/p368/chef-rails-demo"
 	passenger_apache2
 end

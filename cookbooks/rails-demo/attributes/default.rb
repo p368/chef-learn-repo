@@ -1,1 +1,1 @@
-default['rakenv'] = "development"
+default['rackenv'] = "development"

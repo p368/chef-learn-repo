@@ -8,7 +8,11 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[passenger_apache2]"
+    "recipe[passenger_apache2]",
+    "recipe[xml]",
+    "recipe[git]",
+    "recipe[nodejs]",
+    "recipe[rails-demo]"
   ],
   "env_run_lists": {
   }
